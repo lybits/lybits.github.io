@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lybits</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+
+  <style>
+    html { overflow: auto !important; }
+  </style>
+
+</head>
+<body>
+ <div id="app">
+   <v-app light>
+    <!--<v-toolbar color="white">
+      <v-toolbar-title>Lybits</v-toolbar-title>
+    </v-toolbar>-->
+    <v-content>
+      <section>
+        <v-parallax src="assets/banner.png" height="300">
+          <v-layout
+            column
+            align-center
+            justify-center
+            class="white--text"
+          >
+            <h1 class="white--text mb-2 display-4 text-center">Lybits</h1>
+        <!--    <v-btn
+              class="mt-12"
+              color="blue lighten-2"
+              dark
+              large
+              href="/pre-made-themes"
+            >
+              Get Started
+            </v-btn>-->
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section>
+        <v-layout
+          column
+          wrap
+          class="mt-6 mb-4"
+          align-center
+        >
+          <v-flex xs12 sm4 class="mb-2">
+            <div class="text-center">
+              <h2 class="display-1">SERVICIOS</h2>
+            </div>
+          </v-flex>
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent" height="200">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="red--text text--lighten-2">mdi-palette</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-center">Web</div>
+                    </v-card-title>
+                    <v-card-text class="text-center">
+                      Desarrollo de aplicaciones web
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent" height="200">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="red--text text--lighten-2">mdi-apps</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline">Apps</div>
+                    </v-card-title>
+                    <v-card-text class="text-center">
+                      Desarrollo de aplicaciones móviles para cualquier plataforma
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent" height="200">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="red--text text--lighten-2">mdi-wrench</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-center">Consultoría</div>
+                    </v-card-title>
+                    <v-card-text class="text-center">
+                      Servicios de asesoramiento y consultoría en el desarrollo de proyectos de software
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </section>
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-2">
+            <v-flex xs12 sm4>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline">Compañia</div>
+                </v-card-title>
+                <v-card-text>
+                  Somos una empresa joven y dinámica con amplia experiencia en el desarrollo de proyectos de software.
+                  
+                  
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline">Contacta</div>
+                </v-card-title>
+                <v-list class="transparent">
+                  <v-list-item>
+                    <v-list-item-action>
+                      <v-icon class="red--text text--lighten-2">mdi-phone</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                      <v-list-item-title>659 17 22 43</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-action>
+                      <v-icon class="red--text text--lighten-2">mdi-map-marker</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                      <v-list-item-title>Rambla Iberia, 97<br/>08205 - Sabadell</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-action>
+                      <v-icon class="red--text text--lighten-2">mdi-email</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                      <v-list-item-title>info@lybits.es</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
+      <v-footer color="grey">
+            <div class="white--text caption">
+              COPYRIGHT ® 2020&nbsp;LYBITS. S.L.&nbsp;
+        </v-layout>
+      </v-footer>
+    </v-content>
+  </v-app>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+ <script>
+   new Vue({
+    el: '#app',
+    vuetify: new Vuetify()
+  })
+ </script>
+</body>
+</html>
